@@ -1,0 +1,7 @@
+name: astrbot_plugin_timenote
+display_name: 时笺 · TimeNote
+desc: 精确到分钟的时间感知：临时上下文自动注入、工具执行后刷新、当前时间查询，保留主人格。
+version: v0.1.0
+author: CREAM
+repo: https://github.com/azaleakita/astrbot_plugin_timenote
+astrbot_version: ">=4.24,<5"

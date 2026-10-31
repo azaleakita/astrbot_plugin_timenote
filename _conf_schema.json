@@ -1,0 +1,4 @@
+{
+  "enabled": {"description": "自动注入时间上下文", "type": "bool", "default": true, "hint": "关闭后仍可使用时笺指令和时间查询工具。"},
+  "timezone": {"description": "时间感知时区", "type": "string", "default": "Asia/Shanghai", "hint": "IANA 时区，例如 Asia/Shanghai、Asia/Singapore、Europe/London。保存后重载插件。独立于服务器所在时区。"}
+}
