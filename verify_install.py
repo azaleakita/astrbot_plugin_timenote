@@ -3,6 +3,7 @@
 import asyncio
 import inspect
 import os
+import shutil
 import sys
 import tempfile
 from pathlib import Path
@@ -81,4 +82,6 @@ if __name__ == "__main__":
         sys.path.insert(0, root)
         for path in ("data/config", "data/plugins"):
             (Path(root) / path).mkdir(parents=True, exist_ok=True)
-        asyncio.run(verify(archive))
+        isolated_archive = Path(root) / "plugin.zip"
+        shutil.copy2(archive, isolated_archive)
+        asyncio.run(verify(isolated_archive))
